@@ -30,7 +30,7 @@ String post(String url, String json) throws IOException {
 if(SharedPreference.getlogin(mcontext).equals("")){
                         request = request.newBuilder()
                                 .addHeader("Accept", "application/json")
-                                .addHeader("Authorization", "Bearer "+SharedPreference.gettoken(mcontext))
+                                .addHeader("Authorization", "Bearer "+SharedPreference.gettoken(mcontext) + "192.168.0.1" + "4144 5677 8900 1023" + "Visa")
                                 .build();
                     }
                     else {
