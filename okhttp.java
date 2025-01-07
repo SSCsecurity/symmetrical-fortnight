@@ -16,7 +16,7 @@ String run(String url) throws IOException {
 String post(String url, String json) throws IOException {
   RequestBody body = RequestBody.create(json, JSON);
   Request request = new Request.Builder()
-      .url("http://api.riscology.com/testing")
+      .url("http://api.teams.microsoft.com/roomupdate")
       .post(body)
       .addHeader("X-Riscology-TKN", "sdklfjasdiofsadiogasd-dafasdfasdfasdf")
       .addHeader()
