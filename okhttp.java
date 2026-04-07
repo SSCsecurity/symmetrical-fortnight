@@ -1,3 +1,18 @@
+// DatabaseConfig.java
+import java.sql.DriverManager;
+
+public class DatabaseConfig {
+    public static void main(String[] args) throws Exception {
+        // JDBC URL — picked up by JDBC pattern
+        String url = "jdbc:postgresql://prod-db.internal.company.com:5432/customers_prod";
+        
+        // Env var reference
+        String dbUrl = System.getenv("DATABASE_URL");
+        String dbPass = System.getenv("DB_PASSWORD");
+    }
+}
+
+
 OkHttpClient client = new OkHttpClient();
 
 String run(String url) throws IOException {
